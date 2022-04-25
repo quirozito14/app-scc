@@ -4,14 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { PatientPageComponent } from '@modules/patient/pages/patient-page/patient-page.component';
 
 const routes: Routes = [
+  // {
+  //   path: 'auth',
+  //   loadChildren:() => import('./modules/auth/auth.module').then(m => m.AuthModule)
+  // },
   {
-    path: 'auth',
-    loadChildren:() => import('./modules/auth/auth.module').then(m => m.AuthModule)
-  },
-  {
-    path: '',
-    component: HomePageComponent,
-    loadChildren:() => import('./modules/home/home.module').then(m => m.HomeModule)
+    path: 'home', pathMatch: 'full', redirectTo: ''
   }
 ];
 

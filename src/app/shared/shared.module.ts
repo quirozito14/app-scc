@@ -8,16 +8,16 @@ import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    SideBarComponent,
-    HeaderComponent
+    
+
   ],
   imports: [
     CommonModule,
     RouterModule
   ],
   exports: [
-    SideBarComponent,
-    HeaderComponent
+
+
   ]
 })
 export class SharedModule { }
