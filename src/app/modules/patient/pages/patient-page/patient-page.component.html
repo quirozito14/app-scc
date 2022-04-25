@@ -1,0 +1,38 @@
+<div class="row">
+  <router-outlet></router-outlet>
+  <br>
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="input_text" type="text">
+        <label for="input_text">Buscar Paciente</label>
+      </div>
+    </div>
+  </form>
+  <div class="col s12">
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Apellidos</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let item of patient">
+          <td>{{item.id}}</td>
+          <td>{{item.nombre}}r</td>
+          <td>{{item.apellidos}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <a routerLink="/new" class="waves-effect  blue lighten-1 btn col s12">Nuevo Paciente</a>
+    </div>
+  </div>
+</div>
